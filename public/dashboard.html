@@ -112,7 +112,7 @@
                     <center>
                     <p class="card-text">
                         <b>Enter Amount :</b> <input type="number" id="addbal"/></p>
-                    <a href="" class="btn btn-primary" onclick="AddBal()">Verify its you!</a>
+                    <a href="transaction.html" class="btn btn-primary" onclick="AddBal()">Verify its you!</a>
                     </center>
                 </div>
             </div>
@@ -149,9 +149,10 @@
         });
         var currBal = 10000;
         function AddBal(){
+            window.location.replace('transaction.html')
             currBal = currBal+Number(document.getElementById('addbal').value);
             document.getElementById("balance").innerHTML = currBal;
-            window.location.replace('transaction.html')
+            
         }
         function MinusBal(){
             currBal = currBal-Number(document.getElementById('minusbal').value);
