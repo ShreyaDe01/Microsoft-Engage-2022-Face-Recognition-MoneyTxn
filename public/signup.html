@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sign Up - MoneyTxn</title>
+
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="../style/style_login_signup.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-container">
+            <a href="../index.html"><i class="material-icons" style="color: white; font-size: 3rem;" >home</i></a>
+            <!--Sign up div-->
+            <div class="signup">
+                <form class="sign-up" id="signup-form">
+                    <h2 class="title">Sign Up</h2>
+                    <!--Take image input-->
+                    <center><input type="file" id="photo" />
+                        <!--<button id="upload_img"class="btn" onclick="uploadImage()">Upload Image</button>-->
+                        <br>
+                        <div id="display-image"></div>
+                        <p style="color: rgb(175, 175, 175);">Upload preferably a square image</p>
+                    </center>
+                    <!--Image input ends-->
+
+                    <div class="input-field">
+                        <i class="material-icons">person</i>
+                        <input type="text" id="name" placeholder="Enter your name"/>    
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons">email</i>
+                        <input type="email" id="email" placeholder="Enter your emailID"/>    
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons">phone</i>
+                        <input type="tel" id="phone" placeholder="Enter your phone no"/>    
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons">lock</i> 
+                        <input type="password" id="password" placeholder="Enter password"/>    
+                    </div>
+                    <input type="submit" id="submitDetails" class="btn solid" value="Sign Up" onclick="signUp()"/>
+                </form>
+            </div>
+        </div>
+        <div class="panel-container">
+            <div class="panel right-panel">
+                <h4>Already have an account?</h4>
+                <a href="login.html"><button class="btn" id="log-in-btn">Log In</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Database setups-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+    <script src="../js/firebase.js"></script>
+    <script src="../js/signup.js"></script>
+</body>
+</html>

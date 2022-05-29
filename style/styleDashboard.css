@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.navbar{
+    background-color: rgb(96, 1, 139);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.navbar-nav a{
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+}
+
+.navbar-nav a:hover/*, #account:hover*/{
+    background-color: rgb(51, 0, 75);
+}
+/*#account{
+    color: white; 
+    font-size: 1.5rem;
+    
+    margin-right: 2%;
+}*/
+
+#logout{
+    color: white;
+    border: 2px solid white;
+    margin-left: 15%;
+    background: none;
+}
+
+#logout:hover{
+    color:blueviolet;
+    background: white;
+}
+
+h3.section-header{
+    color: white;
+    text-align: center;
+    
+}
+
+#struct{
+    padding: 1rem;
+    background: linear-gradient(45deg, rgb(102, 24, 138) 0%, rgb(228, 15, 114) 100%);
+}
+
+#txn-container{
+   /*border-radius:  100% 80% 80% 30% ;*/
+    padding:0% 5% 6.5% 5%;
+    background:  linear-gradient(45deg, rgb(102, 24, 138) 0%, rgb(228, 15, 114) 100%) ;
+    height:max-content;
+}
+
+#setAcc{
+    background:rgb(102, 24, 138) ;
+    color: white;
+}
+#stopCam, #snap, #capture_img, #cmplttxn, #goback, #txnlo{
+    color: white;
+    border: 2px solid white;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: black;
+}
+
+#stopCam:hover, #snap:hover, #capture_img:hover, #cmplttxn:hover, #goback:hover, #txnlo:hover{
+    color:blueviolet;
+    background: white;
+}
+
+
+#canvas{
+    background: pink;
+    border-radius: 10px;
+}
+
+#reflay{
+    border: 1px solid white;
+    z-index: 1;
+    margin-top: -100%;
+}

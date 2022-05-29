@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - MoneyTxn</title>
+
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" type="text/css" href="../style/style_login_signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <a href="../index.html"><i class="material-icons" style="color: white; font-size: 3rem;" >home</i></a>
+        <!--Log in div-->
+            <div class="login">
+                <form action="/" id="login-form" method="post" class="log-in">
+                    <h2 class="title">Log In</h2>
+                    <center><small><span id="error" style="color: red"></span></small></center>
+                    <div class="input-field">
+                        <i class="material-icons">person</i>
+                        <input type="email"  id="email" placeholder="Username"/>    
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons">lock</i> 
+                        <input type="password"  id="password" placeholder="Password"/>    
+                    </div>
+                    <input type="submit" class="btn solid" value="Log In" onclick="login()"/>
+                    
+                </form>
+                <br><br>
+            </div>
+        </div>
+        <div class="panel-container">
+            <div class="panel right-panel">
+                <h4>New Here?</h4>
+                <a href="signup.html"><button class="btn" id="sign-up-btn">Sign Up</button></a>
+            </div>
+        </div>
+    </div>
+
+        
+    <!--database setups-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    
+    <script src="../js/firebase.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

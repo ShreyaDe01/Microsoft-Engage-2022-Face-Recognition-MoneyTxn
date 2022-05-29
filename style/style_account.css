@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+.navbar{
+    background-color: rgb(96, 1, 139);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.navbar-nav a{
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+}
+
+.navbar-nav a:hover, #account:hover{
+    background-color: rgb(51, 0, 75);
+}
+
+.navbar-text{
+    margin-right: 5%;
+}
+
+#go_back{
+    color: white;
+    border: 2px solid white;
+    background: none;
+    
+}
+
+#go_back:hover{
+    color:blueviolet;
+    background: white;
+}
+
+/*Account setup form*/
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+/* Add padding to container elements */
+#setup-container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.75);
+    padding-top: 50px;
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+  
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    #savebtn, #cancelbtn {
+      width: 100%;
+    }
+  }
+
+#video{
+    height: 400px;
+    width: 400px;
+    padding-top: 5%;
+}
+
+#canvas{
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+}
