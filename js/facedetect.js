@@ -58,6 +58,7 @@ $(document).ready(function(){
             const bestMatch = faceMatcher.findBestMatch(singleResult.descriptor)
             console.log(bestMatch.toString())
             alert("Face verified and transaction successful!");
+            
             location.replace("../public/dashboard.html")
         }
         else{

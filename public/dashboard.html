@@ -124,7 +124,7 @@
                 <center>
                 <p class="card-text">
                     <b>Enter Amount :</b> <input type="number" id="minusbal"/></p>
-                <a href="" class="btn btn-primary" onclick="MinusBal()">Verify its you!</a>
+                <a href="transaction.html" class="btn btn-primary" onclick="MinusBal()">Verify its you!</a>
             </center>
             </div>
         </div>
@@ -149,17 +149,17 @@
         });
         var currBal = 10000;
         function AddBal(){
-            window.location.replace('transaction.html')
             currBal = currBal+Number(document.getElementById('addbal').value);
             document.getElementById("balance").innerHTML = currBal;
-            
+            window.location.assign('transaction.html')
         }
         function MinusBal(){
             currBal = currBal-Number(document.getElementById('minusbal').value);
             document.getElementById("balance").innerHTML = currBal;
-            window.location.replace('transaction.html')
+            window.location.assign('transaction.html')
         }
     </script>
+    <script src="../js/facedetect.js"></script>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
