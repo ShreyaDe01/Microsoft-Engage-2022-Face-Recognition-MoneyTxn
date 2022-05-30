@@ -56,7 +56,7 @@ Click on the "CAPTURE IMAGE FROM WEBCAM" option to start the webcam and click on
 <br>
 
 Click on the "STOP WEBCAM" option to upload the captured image and run face verification.<br><br>
-The face in the captured image is matched with the profile image uploaded earlier to verify the user. This is done using the [face-api.js] which runs in the background.
+The face in the captured image is matched with the profile image uploaded earlier to verify the user. This is done using the [face-api.js](https://github.com/justadudewhohacks/face-api.js) which runs in the background.
 If the face is not detected, a "no face detected" warning is generated and the authorised user is required to again capture their image with their face clearly visible.
 If the face is matched, then a message of successful face verification and transaction is generated and the transaction is completed.
 If the face is not matched, then the transaction is failed. 
